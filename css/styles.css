@@ -1,4 +1,4 @@
-/* Atuthorized translations styles */
+/* Authorized translations styles */
 
 *{
 	box-sizing: border-box;
@@ -129,7 +129,7 @@ body{
 #welcome a{
 	text-decoration:none;
 	color:darkorchid;
-	font-size:bold;
+	font-weight:bold;
 }
 
 .big-book{
@@ -238,8 +238,6 @@ h1, h2, h3, h4{
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-image: url("../img/blank-1298178_640.png");
-	/*background:blue;*/
-	/*background:url("../img/united-kingdom-flag-icon-128.png");*/
 }
 
 #side-wrapper{
@@ -374,6 +372,15 @@ h1, h2, h3, h4{
 		display:none;
 	}
 
+	.frame{
+		height:35vh;
+	}
+
+	#owner-id li{
+		display:inline-block;
+		margin:1em;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -405,6 +412,16 @@ h1, h2, h3, h4{
 	#side-wrapper{
 	width:90%;
 	}
+
+	.frame{
+		height:75vh;
+	}
+
+	#owner-id li{
+		width:65%;
+		margin:1em auto;
+	}
+
 }
 
 @media (max-width: 767px){
@@ -435,4 +452,126 @@ h1, h2, h3, h4{
 	#side-wrapper{
 	width:85%;
 	}
+
+	.frame{
+		height:50vh;
+	}
+
+	#owner-id li{
+		width:50%;
+		margin:1em auto;
+	}
 }
+
+/*-------------------About Page. Additional Styles --------------------------------------------------------------------------------------------- */
+body.about{
+	background:lightgreen;
+}
+
+body.about h1{
+	font-size:3em;
+	color:whitesmoke;
+	text-shadow: 2px 2px 4px navy;
+	padding:1em;
+}
+
+body.about h2, body.about h3{
+	color:navy;
+	text-shadow: 2px 2px 4px whitesmoke;
+}
+
+#footer.about section{
+	background:linear-gradient(lightgreen, #ccffcc);
+	text-align:center;
+}
+
+#footer.about section p{
+	text-align:left;
+}
+
+.img-responsive{
+	display:block;
+	height:auto;
+	max-width:100%;
+	margin:0 auto;
+	border:3px ridge lightgray;
+	border-radius:8px;
+}
+
+figcaption{
+	font-style: italic;
+}
+
+#owner-id header{
+	background-image: url("../img/euro-flag-1776253_640.jpg");
+	background-size:contain;
+	background-position: center;
+	border-radius: 6px;
+}
+
+#owner-id li > a, #owner-details li > a{
+	text-decoration: none;
+}
+
+#owner-id ul > li > a{
+	color:whitesmoke;
+}
+
+#owner-details ul > li > a{
+	color:navy;
+}
+
+#owner-details li > a:hover{
+	color:seagreen;
+}
+
+#owner-id .row div:nth-of-type(even){
+	background:linear-gradient(lightgreen, #ccffff);
+}
+
+#owner-id .row div:nth-of-type(odd){
+	background:linear-gradient(#ccffcc, lightgreen);
+}
+
+#owner-id div{
+	border-radius:4px;
+	padding:.5rem;
+}
+
+#owner-id li, #owner-details li{
+	padding:.5rem;
+}
+
+#owner-id li{
+	text-align:center;
+	list-style-type: none;
+}
+
+#owner-details section{
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	border-color: gray;
+	border-top-right-radius: 4px;
+	background:linear-gradient(#ccffcc, lightgreen);
+}
+
+#owner-details dl > dt, #owner-details dl > dd, #owner-details details{
+	padding:.5rem;
+}
+
+#owner-details dl > dt{
+	text-indent: 10px;
+}
+
+#owner-details li:last-child{
+	list-style-type: none;
+}
+
+.frame{
+	display: block;
+	margin:1%;
+	border:3px ridge lightgray;
+	border-radius:4px;
+	width:98%;
+}
+
