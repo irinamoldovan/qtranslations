@@ -179,6 +179,7 @@ body{
 	border-radius:4px;
 	border:2px ridge lightgray;
 	cursor: pointer;
+	
 }
 
 .custom-button:hover{
@@ -326,150 +327,6 @@ h1, h2, h3, h4{
 }
 
 
-/********************** Bootstrap-like 12 cols grid ****************/
-
-.row:before, .row:after{
-	content:"";
-	display:table;
-
-}
-
-.row:after{
-	clear:both;
-}
-
-@media (min-width: 1024px){
-	.col-lg-12{
-		width:100%;
-	}
-
-	.col-lg-8{
-		width:66.6666%;
-	}
-
-	.col-lg-7{
-		width:58.3333%;
-	}
-
-	.col-lg-6{
-		width:50%;
-	}
-
-	.col-lg-5{
-		width:41.6666%;
-	}
-
-	.col-lg-4{
-		width:33.3333%;
-	}
-
-	.col-lg-2{
-		width:16.6666%;
-	}
-
-	.col-lg-12, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-2{
-		float:left;
-	}
-
-	.nav-list, .nav-list li{
-		display: inline-block !important;
-	}
-
-	.bs-button{
-		display:none;
-	}
-
-	.frame{
-		height:35vh;
-	}
-
-	#owner-id li{
-		display:inline-block;
-		margin:1em;
-	}
-
-}
-
-@media (min-width: 768px) and (max-width: 1023px){
-	.col-md-12{
-		width:100%;
-	}
-
-	.col-md-6{
-		width:50%;
-	}
-
-	.col-md-12, .col-md-6{
-		float:left;
-	}
-
-	#first-menu > h3{
-		margin-left:0;
-		text-align:center;
-	}
-
-	body{
-		font-size:.95rem;
-	}
-
-	.wrapper{
-		width:90%;
-	}
-
-	#side-wrapper{
-	width:90%;
-	}
-
-	.frame{
-		height:75vh;
-	}
-
-	#owner-id li{
-		width:65%;
-		margin:1em auto;
-	}
-
-}
-
-@media (max-width: 767px){
-	
-	body{
-		font-size:.9rem;
-	}
-	
-	.col-sm-12{
-		width:100%;
-		float:left;
-	}
-
-	#book{
-		margin-right: 0;
-		margin-left:0;
-	}
-
-	#first-menu > h3{
-		margin-left:0;
-		text-align:center;
-	}
-
-	.wrapper{
-		width:95%;
-	}
-
-	#side-wrapper{
-	width:85%;
-	}
-
-	.frame{
-		height:50vh;
-	}
-
-	#owner-id li{
-		width:50%;
-		margin:1em auto;
-	}
-}
-
 /*-------------------About Page. Additional Styles --------------------------------------------------------------------------------------------- */
 body.about{
 	background:lightgreen;
@@ -576,9 +433,160 @@ figcaption{
 
 .frame{
 	display: block;
-	margin:1%;
+	margin:1% auto;
 	border:3px ridge lightgray;
 	border-radius:4px;
 	width:98%;
 }
 
+/********************** Bootstrap-like 12 cols grid ****************/
+
+.row:before, .row:after{
+	content:"";
+	display:table;
+
+}
+
+.row:after{
+	clear:both;
+}
+
+@media (min-width: 1024px){
+	.col-lg-12{
+		width:100%;
+	}
+
+	.col-lg-8{
+		width:66.6666%;
+	}
+
+	.col-lg-7{
+		width:58.3333%;
+	}
+
+	.col-lg-6{
+		width:50%;
+	}
+
+	.col-lg-5{
+		width:41.6666%;
+	}
+
+	.col-lg-4{
+		width:33.3333%;
+	}
+
+	.col-lg-2{
+		width:16.6666%;
+	}
+
+	.col-lg-12, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-2{
+		float:left;
+	}
+
+	.nav-list, .nav-list li{
+		display: inline-block !important;
+	}
+
+	.bs-button{
+		display:none;
+	}
+
+	.frame{
+		height:200px;
+	}
+
+	#owner-id li{
+		display:inline-block;
+		margin:1em;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	.col-md-12{
+		width:100%;
+	}
+
+	.col-md-6{
+		width:50%;
+	}
+
+	.col-md-12, .col-md-6{
+		float:left;
+	}
+
+	#first-menu > h3{
+		margin-left:0;
+		text-align:center;
+	}
+
+	body{
+		font-size:.95rem;
+	}
+
+	.wrapper{
+		width:90%;
+	}
+
+	#side-wrapper{
+	width:90%;
+	}
+
+	.frame{
+		height:320px;
+		width:60%;
+	}
+	
+	#next.custom-button{
+		display:block;
+		margin:5px auto;
+		width:60%;
+		text-align:center;
+	}
+
+	#owner-id li{
+		width:65%;
+		margin:1em auto;
+	}
+
+}
+
+@media (max-width: 767px){
+	
+	body{
+		font-size:.9rem;
+	}
+	
+	.col-sm-12{
+		width:100%;
+		float:left;
+	}
+
+	#book{
+		margin-right: 0;
+		margin-left:0;
+	}
+
+	#first-menu > h3{
+		margin-left:0;
+		text-align:center;
+	}
+
+	.wrapper{
+		width:95%;
+	}
+
+	#side-wrapper{
+	width:85%;
+	}
+
+	.frame{
+		height:200px;
+	}
+
+	#owner-id li{
+		width:50%;
+		margin:1em auto;
+	}
+}
